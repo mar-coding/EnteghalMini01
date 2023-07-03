@@ -12,7 +12,7 @@ def uni_NRZ(bits):
             y = np.concatenate((y, np.ones(1000)))
     return x,y
 
-def pol_NRZL(bits, high=-1):
+def pol_NRZL(bits, high=+1):
     bits = list(bits)
     x = np.arange(0, len(bits), 0.001)
     y = np.empty(0)
