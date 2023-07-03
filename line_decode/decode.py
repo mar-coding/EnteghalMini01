@@ -22,8 +22,8 @@ def decode_nrzi_to_input(bits):
 
 def decode_nrzl_to_input(bits):
     input_array = []
+
     previous_bit = None
-    print(bits)
     for bit in bits:
         if bit == "1":
             input_array.append(1)
@@ -119,14 +119,3 @@ def decode_differential_manchester_to_input(bits):
         previous_level = level
 
     return input_array
-
-
-
-
-# encoded_bits = "0+-000+-0"
-
-encoded_bits = "1010100110010101"
-
-# encoded_bits = "+0-0-0+0+0-0"
-decoded_array = decode_differential_manchester_to_input(encoded_bits)
-print(decoded_array)
