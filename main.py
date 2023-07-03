@@ -86,50 +86,50 @@ def main():
             if ch == 1:
                 # Unipolar NRZ
                 try:
-                    dl.decode_unipolar_nrz_to_input(bits)
+                    print(dl.decode_unipolar_nrz_to_input(bits))
                 except ValueError as e:
                     print(e)
                     
             elif ch == 2:
                 # Polar NRZ-L
                 try:
-                    dl.decode_nrzl_to_input(bits)
+                    print(dl.decode_nrzl_to_input(bits))
                 except ValueError as e:
                     print(e)
             elif ch == 3:
                 # Polar NRZ-I
                 try:
-                    dl.decode_nrzi_to_input(bits)
+                    print(dl.decode_nrzi_to_input(bits))
                 except ValueError as e:
                     print(e)
             elif ch == 4:
                 # Polar RZ
                 try:
-                    dl.decode_polar_rz_to_input(bits)
+                    print(dl.decode_polar_rz_to_input(bits))
                 except ValueError as e:
                     print(e)
             elif ch == 5:
                 # Biphase Manchester
                 try:
-                    dl.decode_manchester_to_input(bits)
+                    print(dl.decode_manchester_to_input(bits))
                 except ValueError as e:
                     print(e)
             elif ch == 6:
                 # Biphase Differential Manchester
                 try:
-                    dl.decode_differential_manchester_to_input(bits)
+                    print(dl.decode_differential_manchester_to_input(bits))
                 except ValueError as e:
                     print(e)
             elif ch == 7:
                 # Bipolar AMI
                 try:
-                    dl.decode_ami_to_input(bits)
+                    print(dl.decode_ami_to_input(bits))
                 except ValueError as e:
                     print(e)
             elif ch == 8:
                 # Pseudoternary
                 try:
-                    dl.decode_pseudoternary_to_input(bits)
+                    print(dl.decode_pseudoternary_to_input(bits))
                 except ValueError as e:
                     print(e)
         else:
